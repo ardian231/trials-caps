@@ -9,7 +9,7 @@
 
         <!-- Start Contact Form -->
         <div class="col-lg-8 mx-auto">
-            <form class="contact-form row" method="post" action="{{ route('umkm.store') }}" role="form">
+            <form class="contact-form row" method="post" action="{{ route('umkm.store') }}" role="form" enctype="multipart/form-data">
                 @csrf
 
                 <div class="col-lg-6 mb-4">
@@ -23,6 +23,13 @@
                     <div class="form-floating">
                         <input type="text" class="form-control form-control-lg light-300" id="nama_usaha" name="nama_usaha" placeholder="Nama Usaha" required>
                         <label for="nama_usaha" class="light-300">Nama Usaha</label>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="form-floating">
+                        <input type="email" class="form-control form-control-lg light-300" id="email" name="email" placeholder="Email" required>
+                        <label for="email" class="light-300">Email</label>
                     </div>
                 </div>
 
@@ -136,6 +143,13 @@
                     <div class="form-floating">
                         <textarea class="form-control light-300" rows="8" id="lokasiusaha" name="lokasiusaha" placeholder="Lokasi Usaha" required></textarea>
                         <label for="lokasiusaha" class="light-300">Lokasi Usaha</label>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="form-floating">
+                        <input type="file" class="form-control form-control-lg light-300" id="proposal" name="proposal" required>
+                        <label for="proposal" class="light-300">Upload Proposal</label>
                     </div>
                 </div>
 

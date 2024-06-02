@@ -15,6 +15,9 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                     <div class="container mx-auto px-4 py-8">
+                <h2 class="text-2xl font-bold mb-4 text-black text-center">Daftar Barang</h2>
                 </div>
             </div>
         </div>
