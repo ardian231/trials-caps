@@ -18,6 +18,7 @@ Route::get('/contact', function () {
 Route::get('/umkm', function () {
     return view('umkm');
 });
+
 Route::post('/umkm/store', [UMKMController::class, 'store'])->name('umkm.store');
 
 
