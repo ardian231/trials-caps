@@ -45,15 +45,15 @@
                 <div class="team-member col-md-4">
                     <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-02.jpg" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Ardian Setiawan</li>
-                        <li>Penetration Tester</li>
+                        <li>Dewi Sawita</li>
+                        <li>Front-end Developer</li>
                     </ul>
                 </div>
                 <div class="team-member col-md-4">
                     <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-03.jpg" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Dewi Sawita</li>
-                        <li>Front-end Developer</li>
+                        <li>Ardian Setiawan</li>
+                        <li>Cyber Security</li>
                     </ul>
                 </div>
                 <div class="team-member col-md-4">
