@@ -52,18 +52,16 @@
                 <a href="{{ route('admin.dashboard') }}" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>UMKVest</h3>
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <img class="rounded-circle" src="{{ asset('asset/img/user.jpg') }}" alt="" style="width: 40px; height: 40px;">
-                        <div
-                            class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1">
-                        </div>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="mb-0">John Doe</h6>
-                        <span>Admin</span>
-                    </div>
+               <div class="d-flex align-items-center ms-4 mb-4">
+    <div class="position-relative">
+        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
+    </div>
+    <div class="ms-3">
+        <h6 class="mb-0">{{ Auth::user()->name }}</h6>
+        <span>{{ Auth::user()->role }}</span>
+    </div>
                 </div>
+
                 <div class="navbar-nav w-100">
                     <a href="{{ route('admin.dashboard') }}" class="nav-item nav-link active"><i
                             class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
@@ -162,16 +160,21 @@
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="{{ asset('asset/img/user.jpg') }}" alt=""
-                                style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
-                        </div>
+                        <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
                     </div>
                 </div>
             </nav>
@@ -181,19 +184,6 @@
             @yield('content')
         </div>
         <!-- Content End -->
-
-        <!-- Footer Start -->
-        <footer class="footer">
-        <div class="container-fluid pt-4 px-4">
-            <div class="bg-secondary rounded-top p-4">
-                <div class="row">
-                    <div class="col-12 col-sm-6 text-center text-sm-start">
-                        &copy; <a href="#">UMKVest</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
-        </footer>
         <!-- Footer End -->
 
         <!-- Back to Top -->
