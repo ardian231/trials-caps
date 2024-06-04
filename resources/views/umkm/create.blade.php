@@ -145,14 +145,7 @@
                         <label for="lokasiusaha" class="light-300">Lokasi Usaha</label>
                     </div>
                 </div>
-
-                <div class="col-12 mb-4">
-                    <div class="form-floating">
-                        <input type="file" class="form-control form-control-lg light-300" id="proposal" name="proposal" required>
-                        <label for="proposal" class="light-300">Upload Proposal</label>
-                    </div>
-                </div>
-
+                
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                 </div>

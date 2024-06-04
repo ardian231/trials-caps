@@ -10,6 +10,10 @@ use Illuminate\Support\Facades\Storage;
 class UmkmController extends Controller
 {   
     
+     public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function create()
     {
         // Logika untuk method create
@@ -30,11 +34,7 @@ class UmkmController extends Controller
             'jenis_investasi' => 'required|string',
             'modal_diinginkan' => 'required|string',
             'lokasiusaha' => 'required|string',
-            'proposal' => 'required|file|mimes:pdf,doc,docx|max:2048'
         ]);
-
-        // Mengunggah file proposal
-        $proposalPath = $request->file('proposal')->store('proposals');
 
         // Menyimpan data UMKM
         $umkm = new Umkm();
@@ -49,7 +49,6 @@ class UmkmController extends Controller
         $umkm->jenis_investasi = $request->jenis_investasi;
         $umkm->modal_diinginkan = $request->modal_diinginkan;
         $umkm->lokasiusaha = $request->lokasiusaha;
-        $umkm->proposal = $proposalPath;
         $umkm->save();
         
         return redirect()->back()->with('success', 'Data UMKM berhasil disimpan!');

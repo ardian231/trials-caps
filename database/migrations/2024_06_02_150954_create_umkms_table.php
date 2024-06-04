@@ -21,7 +21,6 @@ class CreateUmkmsTable extends Migration
         $table->string('jenis_investasi');
         $table->string('modal_diinginkan');
         $table->text('lokasiusaha');
-        $table->string('proposal');
         $table->timestamps();
     });
 }
