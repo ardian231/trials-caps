@@ -99,7 +99,7 @@
                 <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
                         <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">UMK</span> <span class="text-light h5 semi-bold-600">VEST</span>
+                        <span class="text-light h5">UMK</span> <span class="text-light h5 semi-bold-600">Vest</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
                         Sebuah platform untuk kemudahan para UMKM dan Investor demi bangsa dan negara.
@@ -113,7 +113,7 @@
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2024 UMKVEST. All Rights Reserved.
+                            © Copyright 2024 UMKVest. All Rights Reserved.
                         </p>
                     </div>
                 </div>

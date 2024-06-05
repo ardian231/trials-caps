@@ -19,21 +19,44 @@ class UmkmController extends Controller
         // Logika untuk method create
         return view('umkm.create');
     }
+    public function index()
+    {
+        // Ambil semua data UMKM dari database
+        $umkms = Umkm::all();
+        
+        // Kirim data UMKM ke view
+        return view('umkm.index', compact('umkms'));
+    }
+    public function show($id)
+    {
+        $umkm = UMKM::findOrFail($id);
+        return view('admin.umkm_detail', compact('umkm'));
+    }
+      public function ditolakSistem()
+    {
+        $umkmData = UMKM::where('status', 'tolak oleh sistem')->get();
+        return view('admin.umkm_ditolak', compact('umkmData'));
+    }
 
+    public function diterimaSistem()
+    {
+      $umkmData = UMKM::where('status', 'terima oleh sistem')->orderBy('created_at', 'desc')->take(1)->get();
+      return view('admin.umkm_diterima', compact('umkmData'));
+
+    }
     public function store(Request $request)
     {
-        $request->validate([
+        $validated = $request->validate([
             'nama_pemilik' => 'required|string|max:255',
             'nama_usaha' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'kategori_usaha' => 'required|string',
-            'jenis_usaha' => 'required|string',
-            'lamanya_usaha' => 'required|string',
-            'jumlah_karyawan' => 'required|string',
-            'omset_tahunan' => 'required|string',
-            'jenis_investasi' => 'required|string',
-            'modal_diinginkan' => 'required|string',
-            'lokasiusaha' => 'required|string',
+            'jenis_usaha' => 'required|in:pakaian,kuliner,laundry,fotocopy/percetakan,bengkel/sparepart,toko kelontong,toko bangunan,peralatan listrik,toko buku,toko ponsel,usaha/jasa lainnya',
+            'kategori_usaha' => 'required|in:online,offline',
+            'lama_usaha' => 'required|in:≤1,2,3,4,5,6,7,8,9,≥10',
+            'jumlah_karyawan' => 'required|in:1,2,3,4,5,6,7,8,9,≥10',
+            'omset_tahunan' => 'required|in:≤10,11-20,21-30,31-40,41-50,51-60,61-70,71-80,81-90,91-100,>100',
+            'jenis_investasi' => 'required|in:pemberi modal,rekan kerja,pemberi pinjaman',
+            'modal_diinginkan' => 'required|in:≤10,11-50,51-100,101-200,201-300,301-400,400-500,>500',
+            'lokasi' => 'required|string|max:255'
         ]);
 
         // Menyimpan data UMKM
@@ -43,12 +66,12 @@ class UmkmController extends Controller
         $umkm->email = $request->email;
         $umkm->kategori_usaha = $request->kategori_usaha;
         $umkm->jenis_usaha = $request->jenis_usaha;
-        $umkm->lamanya_usaha = $request->lamanya_usaha;
+        $umkm->lama_usaha = $request->lama_usaha;
         $umkm->jumlah_karyawan = $request->jumlah_karyawan;
         $umkm->omset_tahunan = $request->omset_tahunan;
         $umkm->jenis_investasi = $request->jenis_investasi;
         $umkm->modal_diinginkan = $request->modal_diinginkan;
-        $umkm->lokasiusaha = $request->lokasiusaha;
+        $umkm->lokasi = $request->lokasi;
         $umkm->save();
         
         return redirect()->back()->with('success', 'Data UMKM berhasil disimpan!');

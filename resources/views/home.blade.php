@@ -14,10 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <h4 class="text-2xl font-bold mb-4 text-black text-center">{{ __('You are logged in!') }}</h4>
 
                      <div class="container mx-auto px-4 py-8">
-                <h2 class="text-2xl font-bold mb-4 text-black text-center">Welcome</h2>
+                <h2 class="text-2xl font-bold mb-4 text-black text-center">Silakan Isi Data Diri Anda!</h2>
                 </div>
             </div>
         </div>

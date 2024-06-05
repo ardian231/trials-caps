@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use app\Models\Investor;
+use App\Models\Umkm;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
 class AdminController extends Controller
 {
@@ -14,25 +16,14 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view('admin.dashboard');
+        $umkmData = UMKM::orderBy('created_at', 'desc')->take(1)->get();
+        return view('admin.dashboard', compact('umkmData'));
     }
 
-    public function ditolak()
+    public function show($id)
     {
-        // Logic for the 'ditolak' page
-        return view('admin.ditolak');
-    }
-
-    public function diterima()
-    {
-        // Logic for the 'diterima' page
-        return view('admin.diterima');
-    }
-
-    public function investor()
-    {
-        // Logic for the 'investor' page
-        return view('admin.investor');
+        $umkmData = UMKM::findOrFail($id);
+        return view('admin.umkm_detail', compact('umkmData'));
     }
 }
 

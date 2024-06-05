@@ -18,8 +18,6 @@ class Umkm extends Model
         'omset_tahunan',
         'jenis_investasi',
         'modal_diinginkan',
-        'lokasiusaha',
-        'email',
-        'proposal',
+        'lokasi',
     ];
 }

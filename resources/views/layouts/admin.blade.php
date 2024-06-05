@@ -69,8 +69,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
                                 class="fa fa-laptop me-2"></i>Data UMKM</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('admin.ditolak') }}" class="dropdown-item">Ditolak Sistem</a>
-                            <a href="{{ route('admin.diterima') }}" class="dropdown-item">Diterima Sistem</a>
+                            <a href="{{ route('umkm.ditolak') }}" class="dropdown-item">Ditolak Sistem</a>
+                            <a href="{{ route('umkm.diterima') }}" class="dropdown-item">Diterima Sistem</a>
                         </div>
                     </div>
                     <a href="{{ route('admin.investor') }}" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Investor</a>

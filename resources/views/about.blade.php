@@ -11,7 +11,7 @@
                 <div class="col-lg-6 text-start">
                     <h1 class="h2 py-5 text-primary typo-space-line">Tentang Kami</h1>
                     <p class="light-300">
-                        <strong>UMKVEST</strong> merupakan organisasi yang bergerak di bidang keuangan dengan bertujuan untuk membantu para UMKM agar mendapatkan pendanaan dari para Investor guna memajukan bangsa dan negara.
+                        <strong>UMKVest</strong> merupakan organisasi yang bergerak di bidang keuangan dengan bertujuan untuk membantu para UMKM agar mendapatkan pendanaan dari para Investor guna memajukan bangsa dan negara.
                     </p>
                 </div>
                 <div class="col-lg-6">
@@ -38,7 +38,7 @@
                 <div class="team-member col-md-4">
                     <img class="team-member-img img-fluid rounded-circle p-4" src="./assets/img/team-01.jpg" alt="Card image">
                     <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Anissa Khoirala Ermy Pily</li>
+                        <li>Annisa Khoirala Ermy Pily</li>
                         <li>AI Development</li>
                     </ul>
                 </div>
@@ -155,22 +155,6 @@
     <!-- End Aim -->
 
     <!-- Start Contact -->
-    <section class="banner-bg bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mx-auto my-4 p-3">
-                    <form action="#" method="get"><h1 class="h2 text-center">Masukkan email anda untuk info terbaru</h1>
-                    <div class="input-group py-3">
-                    
-                        <input name="email" type="text" class="form-control form-control-lg rounded-pill rounded-end" id="email" placeholder="Your Email" aria-label="Your Email">
-                        <button class="btn btn-secondary text-white btn-lg rounded-pill rounded-start px-lg-4" type="submit">Subsribe</button>
-                    </div>
-                    <p class="text-center light-300">Kami akan mengirimkan info terbaru seperti berita hingga promo terbaru nantinya.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- End Contact -->
 
 
@@ -182,7 +166,7 @@
                 <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
                         <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">UMK</span> <span class="text-light h5 semi-bold-600">VEST</span>
+                        <span class="text-light h5">UMK</span> <span class="text-light h5 semi-bold-600">Vest</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
                         Sebuah platform untuk kemudahan para UMKM dan Investor demi bangsa dan negara.
@@ -196,7 +180,7 @@
                 <div class="row pt-2">
                     <div class="col-lg-6 col-sm-12">
                         <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2024 UMKVEST. All Rights Reserved.
+                            © Copyright 2024 UMKVest. All Rights Reserved.
                         </p>
                     </div>
                 </div>
