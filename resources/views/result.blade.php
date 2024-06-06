@@ -2,13 +2,13 @@
 
 @section('content')
 <div class="container">
-    @if ($status == 'accepted')
+    @if ($status == 'terima oleh sistem')
         <h1>UMKM Diterima</h1>
         <p>Nama Usaha: {{ $nama_usaha }}</p>
         <h2>Rekomendasi Investor</h2>
         <ul>
             @foreach ($investors as $investor)
-                <li>{{ $investor['nama_investor'] }} - {{ $investor['email'] }}</li>
+                <li>{{ $investor['nama_investor'] }} - {{ $investor['email'] }} - {{ $investor['no_telepon'] }}</li>
             @endforeach
         </ul>
     @else

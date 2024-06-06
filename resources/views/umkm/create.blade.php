@@ -150,7 +150,6 @@
                         <option value="101-200">101 - 200 Juta</option>
                         <option value="201-300">201 - 300 Juta</option>
                         <option value="301-400">301 - 400 Juta</option>
-                        <option value="400-500">400 - 500 Juta</option>
                         <option value=">500"> > 500 Juta </option>
                     </select>
                     <label for="modal_diinginkan" class="light-300">Modal yang diinginkan</label>

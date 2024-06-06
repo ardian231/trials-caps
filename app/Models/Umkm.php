@@ -19,5 +19,6 @@ class Umkm extends Model
         'jenis_investasi',
         'modal_diinginkan',
         'lokasi',
+        'status',
     ];
 }

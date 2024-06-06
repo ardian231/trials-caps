@@ -16,7 +16,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        $umkmData = UMKM::orderBy('created_at', 'desc')->take(1)->get();
+        $umkmData = UMKM::orderBy('created_at', 'asc')->take(20)->get();
         return view('admin.dashboard', compact('umkmData'));
     }
 

@@ -43,4 +43,11 @@ Route::middleware(['auth', 'user'])->group(function () {
     Route::get('/umkms', [UmkmController::class, 'index'])->name('umkm.index');
     Route::get('/umkm/create', [UmkmController::class, 'create'])->name('umkm.create');
     Route::post('/umkm/create', [UmkmController::class, 'store'])->name('umkm.store');
+    Route::post('/umkm/analisis', [UmkmController::class, 'analisisUMKM'])->name('umkm.analisis');
+
+Route::middleware('auth:api')->group(function () {
+    Route::get('/rekomendasi_umkm', [UmkmController::class, 'rekomendasiUMKM'])->name('umkm.rekomendasi');
+    Route::get('/analisis_UMKM', [UmkmController::class, 'analisisUMKM'])->name('umkm.analisis');
+});
+
 });
