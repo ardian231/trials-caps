@@ -33,13 +33,13 @@ class UmkmController extends Controller
 
     public function ditolakSistem()
     {
-        $umkmData = Umkm::where('status', 'tolak oleh sistem')->orderBy('created_at', 'asc')->take(10)->get();
+        $umkmData = Umkm::where('status', 'tolak oleh sistem')->orderBy('created_at', 'desc')->take(10)->get();
         return view('admin.umkm_ditolak', compact('umkmData'));
     }
 
     public function diterimaSistem()
     {
-        $umkmData = Umkm::where('status', 'terima oleh sistem')->orderBy('created_at', 'asc')->take(10)->get();
+        $umkmData = Umkm::where('status', 'terima oleh sistem')->orderBy('created_at', 'desc')->take(10)->get();
         return view('admin.umkm_diterima', compact('umkmData'));
     }
 
@@ -53,7 +53,7 @@ class UmkmController extends Controller
             'lama_usaha' => 'required|in:≤1,2,3,4,5,6,7,8,9,≥10',
             'jumlah_karyawan' => 'required|in:1,2,3,4,5,6,7,8,9,≥10',
             'omset_tahunan' => 'required|in:≤10,11-20,21-30,31-40,41-50,51-60,61-70,71-80,81-90,91-100,>100',
-            'jenis_investasi' => 'required|in:pemberi modal,rekan kerja,pemberi pinjaman',
+            'jenis_investasi' => 'required|in:Pemberi Modal,Rekan Kerja,Pemberi Pinjaman',
             'modal_diinginkan' => 'required|in:≤10,11-50,51-100,101-200,201-300,301-400,400-500,>500',
             'lokasi' => 'required|string|max:255'
         ]);
@@ -103,4 +103,3 @@ class UmkmController extends Controller
         }
     }
 }
-

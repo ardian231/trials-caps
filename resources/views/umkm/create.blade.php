@@ -132,9 +132,9 @@
                 <div class="form-floating">
                     <select class="form-select form-control-lg light-300" id="jenis_investasi" name="jenis_investasi" required>
                         <option value="" hidden>Jenis Investasi</option>
-                        <option value="pemberi modal">Pemberi Modal</option>
-                        <option value="rekan kerja">Rekan Kerja</option>
-                        <option value="pemberi pinjaman">Pemberi Pinjaman</option>
+                        <option value="Pemberi Modal">Pemberi Modal</option>
+                        <option value="Rekan Kerja">Rekan Kerja</option>
+                        <option value="Pemberi Pinjaman">Pemberi Pinjaman</option>
                     </select>
                     <label for="jenis_investasi" class="light-300">Jenis Investasi</label>
                 </div>
