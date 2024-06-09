@@ -21,7 +21,7 @@ Dalam pengerjaan UMKVest ini meliputi:
 6. Deployment website beserta model AI
 Melalui step tersebut, website telah tersusun dan siap digunakan user.
 
-Adapun user yang dimaksud yaitu pihak UMKM yang mencari investor sesuai dengan kriteria yang telah ditentukan
+Adapun user yang dimaksud yaitu pihak UMKM yang mencari investor sesuai dengan kriteria yang telah ditentukan.
 
 ## Learning Laravel
 
