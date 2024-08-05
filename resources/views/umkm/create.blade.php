@@ -4,7 +4,7 @@
 <section class="container py-5">
     <h1 class="col-12 col-xl-8 h2 text-left text-primary pt-3">Masukkan data diri anda disini!</h1>
     <p class="col-12 col-xl-8 text-left text-muted pb-5 light-300">
-        <strong>Perhatikan juga jangan sampai ada nama bahkan ketikan yang salah agar tim kami bisa melayani anda dengan baik!</strong>
+        <strong>Perhatikan jangan sampai ada nama bahkan ketikan yang salah agar tim kami bisa melayani anda dengan baik!</strong>
     </p>
 
     <!-- Start Contact Form -->
@@ -25,21 +25,21 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <input type="text" class="form-control form-control-lg light-300" id="nama_pemilik" name="nama_pemilik" placeholder="Nama Pemilik" required>
-                    <label for="nama_pemilik" class="light-300">Nama Pemilik</label>
+                    <input type="text" class="form-control form-control-lg light-300" id="nama_pemilik" name="nama_pemilik" placeholder="Nama Pemilik" style="font-size: 13px;" required>
+                    <label for="nama_pemilik" class="light-300" >Nama Pemilik</label>
                 </div>
             </div>
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <input type="text" class="form-control form-control-lg light-300" id="nama_usaha" name="nama_usaha" placeholder="Nama Usaha" required>
+                    <input type="text" class="form-control form-control-lg light-300" id="nama_usaha" name="nama_usaha" placeholder="Nama Usaha" style="font-size: 13px;"  required>
                     <label for="nama_usaha" class="light-300">Nama Usaha</label>
                 </div>
             </div>
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="jenis_usaha" name="jenis_usaha" required>
-                        <option value="" hidden>Pilih Usaha</option>
+                    <select class="form-select form-control-lg light-300" id="jenis_usaha" name="jenis_usaha" style="font-size: 13px;"  required>
+                    <option value="" hidden>Pilih Usaha</option>
                         <option value="pakaian">Pakaian</option>
                         <option value="kuliner">Kuliner</option>
                         <option value="laundry">Laundry</option>
@@ -58,7 +58,7 @@
 
             <div class="col-lg-6 mb-4">
                 <div>
-                    <label class="form-label">Kategori Usaha</label><br>
+                    <label class="form-label" style="font-size: 15px;" >Kategori Usaha</label><br>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="kategori_usaha" id="online" value="online" required>
                         <label class="form-check-label" for="online">Online</label>
@@ -72,8 +72,8 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="lama_usaha" name="lama_usaha" required>
-                        <option value="" hidden>Lamanya Usaha</option>
+                <select class="form-select form-control-lg light-300" id="lama_usaha" name="lama_usaha" style="font-size: 13px;" required>
+                        <option value="" hidden>Lama Usaha</option>
                         <option value="≤1"> ≤ 1 Tahun</option>
                         <option value="2">2 Tahun</option>
                         <option value="3">3 Tahun</option>
@@ -91,7 +91,7 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="jumlah_karyawan" name="jumlah_karyawan" required>
+                    <select class="form-select form-control-lg light-300" id="jumlah_karyawan" name="jumlah_karyawan" style="font-size: 13px;"  required>
                         <option value="" hidden>Jumlah Karyawan</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -110,7 +110,7 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="omset_tahunan" name="omset_tahunan" required>
+                    <select class="form-select form-control-lg light-300" id="omset_tahunan" name="omset_tahunan" style="font-size: 13px;" required>
                         <option value="" hidden>Omset Tahunan</option>
                         <option value="≤10"> ≤ 10 Juta </option>
                         <option value="11-20">11-20 Juta</option>
@@ -130,7 +130,7 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="jenis_investasi" name="jenis_investasi" required>
+                    <select class="form-select form-control-lg light-300" id="jenis_investasi" name="jenis_investasi" style="font-size: 13px;"  required>
                         <option value="" hidden>Jenis Investasi</option>
                         <option value="Pemberi Modal">Pemberi Modal</option>
                         <option value="Rekan Kerja">Rekan Kerja</option>
@@ -142,7 +142,7 @@
 
             <div class="col-lg-6 mb-4">
                 <div class="form-floating">
-                    <select class="form-select form-control-lg light-300" id="modal_diinginkan" name="modal_diinginkan" required>
+                    <select class="form-select form-control-lg light-300" id="modal_diinginkan" name="modal_diinginkan" style="font-size: 13px;"  required>
                         <option value="" hidden>Modal yang diinginkan</option>
                         <option value="≤10"> ≤ 10 Juta </option>
                         <option value="11-50">11 - 50 Juta</option>
@@ -158,7 +158,7 @@
 
             <div class="col-12 mb-4">
                 <div class="form-floating">
-                    <textarea class="form-control light-300" rows="8" id="lokasi" name="lokasi" placeholder="Lokasi Usaha" required></textarea>
+                    <textarea class="form-control light-300" rows="8" id="lokasi" name="lokasi" placeholder="Lokasi Usaha" style="font-size: 13px;" required></textarea>
                     <label for="lokasi" class="light-300">Lokasi Usaha</label>
                 </div>
             </div>
@@ -171,3 +171,6 @@
     <!-- End Contact Form -->
 </section>
 @endsection
+
+
+

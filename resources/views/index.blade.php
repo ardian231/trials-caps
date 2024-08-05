@@ -4,7 +4,7 @@
 
 @section('content')
     <body>
-  <!-- Start Banner Hero -->
+<!-- Start Banner Hero -->
     <div class="banner-wrapper bg-light">
         <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
 
@@ -22,11 +22,11 @@
                             <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
                                 <h1 class="banner-heading h1 text-secondary display-3 mb-0 pb-5 mx-0 px-0 light-300 typo-space-line">
                                     Membantu <strong>UMKM</strong> Untuk 
-                                  <br>dapat Dana!
-                              </h1>
+                                <br>Mendapatkan Dana!
+                            </h1>
                                 <p class="banner-body text-muted py-3 mx-0 px-0">
-                                    UMKVEST adalah sebuah platform pendanaan yang berguna untuk membantu para UMKM mencairkan dana demi memajukan bangsa dan negara
-                              </p>
+                                UMKVest: Jembatan Inovatif Antara UMKM dan Investor
+                            </p>
                                 <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-4" href="{{ route('register') }}" role="button">Join disini!</a>
                             </div>
                         </div>
@@ -40,7 +40,9 @@
                                     <strong>Bagaimana cara kerjanya?</strong>
                                 </h1>
                                 <p class="banner-body text-muted py-3">
-                                Untuk kamu pengguna <strong>UMKM</strong>, kamu bisa klik <strong>UMKM</strong> di atas untuk mengajukan proposal. Kamu wajib <strong>Login atau Register</strong> terlebih dahulu ya! Lalu ikuti saja tata cara petunjuknya yang tersedia!
+                                Untuk kamu pengguna <strong>UMKM</strong>, klik tab <strong>"UMKM"</strong> di atas untuk mengisi data usahamu. <br>
+                                Setelah itu, kamu akan diberikan beberapa rekomendasi Investor beserta informasi kontaknya.<br>
+                                Kamu harus <strong>Login atau Register</strong> terlebih dahulu ya! Lalu ikuti saja tata cara petunjuknya yang tersedia!
                                 </p>
                             </div>
                         </div>
@@ -92,7 +94,7 @@
                 </div>
             </div>
             <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
-                Dengan layanan ini, kami melayani dan memudahkahkan para UMKM untuk mendapatkan Investor yang layak dan begitu juga dengan Investor. Kami selalu mengedepankan Keamanan dan Kenyamanan dalam berproses.
+                Dengan layanan ini, kami melayani dan memudahkahkan para UMKM untuk mendapatkan Investor yang layak dan memadai. Kami selalu mengedepankan Keamanan dan Kenyamanan dalam berproses.
             </p>
         </div>
 
@@ -103,11 +105,11 @@
 
                 <div class="col-lg-3 col-12 align-left">
                     <a class="navbar-brand" href="index.html">
-                        <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">UMK</span> <span class="text-light h5 semi-bold-600">Vest</span>
+                        <i class='bx bx-buildings bx-sm text-light' ></i>
+                        <span class="text-light h5">UMK</span><span class="text-light h5 semi-bold-600">Vest</span>
                     </a>
                     <p class="text-light my-lg-4 my-2">
-                        Sebuah platform untuk kemudahan para UMKM dan Investor demi bangsa dan negara.
+                    Jembatan Inovatif <br>Antara UMKM dan Investor
                     </p>
                 </div>
         <div class="w-100 bg-primary py-3">

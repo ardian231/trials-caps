@@ -23,7 +23,14 @@
     
     <!-- Vite -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
+    <style>
+#navbarDropdown:hover {
+    color: black !important;
+}
+</style>
 </head>
+
 <body>
     <div id="app">
         <!-- Header -->
@@ -31,7 +38,7 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <a class="navbar-brand h1" href="{{ url('/') }}">
                     <i class='bx bx-buildings bx-sm text-dark'></i>
-                    <span class="text-dark h4">UMK</span> <span class="text-primary h4">Vest</span>
+                    <span class="text-dark h4" style="font-weight:bold;">UMK<span class="text-primary h4"><b>Vest</b></span></span>
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -42,44 +49,44 @@
                     <div class="flex-fill mx-xl-5 mb-2">
                         <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/') }}">Home</a>
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/') }}" style="font-size:15px; font-weight:bold;">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/about') }}">About</a>
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/about') }}" style="font-size:15px; font-weight:bold;">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/contact') }}">Contact</a>
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/contact') }}" style="font-size:15px; font-weight:bold;">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/umkm/create') }}">UMKM</a>
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ url('/umkm/create') }}" style="font-size:15px; font-weight:bold;">UMKM</a>
                             </li>
                         </ul>
                     </div>
 
                     <!-- Right Side Of Navbar -->
                     <div class="flex-fill mx-xl-5 mb-2">
-                        <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <ul class="nav navbar-nav d-flex  mx-xl-5 text-center text-dark">
                             <!-- Authentication Links -->
                             @guest
                                 @if (Route::has('login'))
                                     <li class="nav-item">
-                                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('login') }}" style="font-size:15px; font-weight:bold;">{{ __('Login') }}</a>
                                     </li>
                                 @endif
                                 @if (Route::has('register'))
                                     <li class="nav-item">
-                                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                        <a class="nav-link btn-outline-primary rounded-pill px-3" href="{{ route('register') }}" style="font-size:15px; font-weight:bold;">{{ __('Register') }}</a>
                                     </li>
                                 @endif
                             @else
                                 <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="font-size:15px; font-weight:bold;">
                                         {{ Auth::user()->name }}
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
