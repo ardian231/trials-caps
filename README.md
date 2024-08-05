@@ -7,19 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Application
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Platform UMKVest bertujuan untuk mempertemukan Usaha Mikro, Kecil, dan Menengah (UMKM) yang membutuhkan dana untuk usahanya dengan investor yang menyediakan modal investasi. Teknologi AI akan digunakan untuk menganalisis apakah UMKM memenuhi kriteria untuk mendapatkan investor berdasarkan lama usaha, omset tahunan, dan modal yang diinginkan UMKM. Setelah itu, sistem rekomendasi akan mencocokkan UMKM dengan investor potensial berdasarkan kriteria jenis investasi yang diinginkan.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Dalam pengerjaan UMKVest ini meliputi:
+1. Pengumpulan dataset
+2. Reprocessing data
+3. Training model
+4. Deployment model AI
+5. Perancangan website
+6. Deployment website beserta model AI
+Melalui step tersebut, website telah tersusun dan siap digunakan user.
+
+Adapun user yang dimaksud yaitu pihak UMKM yang mencari investor sesuai dengan kriteria yang telah ditentukan.
 
 ## Learning Laravel
 
